@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figlet Converter</title>
+    <script src="bundled.js"></script>
+
+   <style>
+        body {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#terminal {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: black;
+    height: 400px;
+    overflow-y: auto;
+}
+
+#input {
+    width: 80%;
+    border: none;
+    background: none;
+    color: green;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#convertBtn {
+    display: block;
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#output {
+    white-space: pre;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="terminal">
+        <input type="text" id="input" placeholder="Enter text to convert" autocomplete="off">
+        <button id="convertBtn">Convert</button>
+        <div id="output"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
